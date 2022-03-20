@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://cdni.rbth.com/rbthmedia/images/2018.01/original/5a64d29685600a17fd405905.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgb(252, 207, 6);
+  width: 220px;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.card-image {
+  background-color: white;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.food-1 {
+  background-image: url("https://factsofindonesia.com/wp-content/uploads/2020/07/2-1-1024x738.jpg");
+}
+
+.food-2 {
+  background-image: url("https://www.oldelpaso.co.uk/-/media/oep/uk/recipes/slow-cooker-beef-and-bean-chilli-hero.jpg");
+}
+
+.food-3 {
+  background-image: url("https://th.bing.com/th/id/OIP.Kpd-IG915BE1jBWqgSdkIwHaEP?pid=ImgDet&rs=1");
+}
+
+.food-4 {
+  background-image: url("https://th.bing.com/th/id/OIP.4PNumM-SKITPxs_vY3F39QHaER?pid=ImgDet&rs=1");
+}
+
+.food-5 {
+  background-image: url("https://img.okezone.com/content/2019/06/25/298/2070563/ini-resep-lezat-balado-ayam-dan-telur-eyYUvHL0TE.jpg");
+}
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: rgb(6, 232, 248);
+  color: rgb(0, 17, 255);
+  padding: 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.card:hover {
+  background-color: rgb(252, 8, 8);
+  color: ivory;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  height: 60px;
+}
+
+nav.logo {
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul .cate,
+#cari {
+  cursor: pointer;
+}
+
+nav ul .cate {
+  display: block;
+}
+
+nav ul .cate:hover .gory {
+  display: flex;
+}
+
+nav ul .cate .gory {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 15px;
+}
+
+nav ul .cate .gory li {
+  display: flex;
+  width: 200px;
+  background-color: rgb(6, 252, 231);
+  color: rgb(7, 11, 250);
+  border-style: solid;
+  border-width: 1px;
+}
+
+nav .cate .gory a {
+  padding: 10px;
+  color: rgb(24, 8, 250);
+}
